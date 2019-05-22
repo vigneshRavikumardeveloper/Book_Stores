@@ -139,7 +139,7 @@ app.delete('/api/delete/books/:id',(req,res)=>{
     
     console.log(req.method);
     console.log(req.url);
-
+    console.log("delete Request");
     BookDetails.findByIdAndRemove(req.params.id,(err,doc)=>{
            if(err){
               res.status(400).send(err);
