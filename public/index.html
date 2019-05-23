@@ -30,7 +30,7 @@
  
   $.ajax({
       type:'GET',
-      url:'http://localhost:8000/api/books?limitdata=4&booksorder=desc',
+      url:'http://localhost:8000/api/books?limitdata=10&booksorder=desc',
       success:(data,status,xhr)=>{
          let template=``;
          data.map((item)=>{

@@ -6,7 +6,7 @@ const mongoose=require('mongoose');
 
 mongoose.Promise=global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/book_db');
+mongoose.connect('mongodb://viki:vignesh1@ds155313.mlab.com:55313/book_stores_db');
 
 const {BookDetails}=require('./models/books');
 
