@@ -46,6 +46,8 @@ app.get('/api/stores',(req,res)=>{
 
     console.log(req.method);
     console.log(req.url);
+  
+    
 
    StoreDetails.find((err,doc)=>{
        if(err){
@@ -81,7 +83,7 @@ app.post('/api/add/store',(req,res)=>{
 app.post('/api/add/books',(req,res)=>{
     console.log(req.method);
     console.log(req.url);
-
+    
     console.log('Book hello');
     BookDetails.create(req.body,(err,doc)=>{
         if(err){
